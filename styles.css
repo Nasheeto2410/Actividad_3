@@ -1,0 +1,65 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: rgba(90, 240, 152, 0.349);
+    color: rgba(0, 0, 0, 0.466);
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    padding: 20px;
+}
+  
+.container {
+    margin-bottom: 20px;
+}
+  
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.like-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+  
+.theme-toggle-button {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+  
+.theme-toggle-button.dark {
+    background-color: #333;
+}
+  
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.theme-toggle-button.dark .toggle-icon {
+    transform: translateX(25px);
+}
